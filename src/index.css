@@ -5,5 +5,20 @@
 @layer base {
   body {
     @apply font-pt-sans;
+    @apply bg-grey-light dark:bg-blue-dark;
+  }
+  svg * {
+    @apply fill-inherit stroke-inherit;
+  }
+  div,
+  p,
+  span {
+    @apply selection:bg-yellow selection:bg-opacity-70;
+  }
+}
+
+@layer utilities {
+  .pixel-image {
+    image-rendering: pixelated;
   }
 }
