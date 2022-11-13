@@ -2,8 +2,6 @@ import React from "react";
 
 import { useTranslation } from "react-i18next";
 
-import Sprite from "../../components/Sprite";
-import { MoveType } from "../../components/Sprite";
 import ArrowLink from "../../components/ArrowLink";
 
 import { ABOUT_PAGE_ROUTE, PROJECTS_PAGE_ROUTE } from "../../config/routes";
