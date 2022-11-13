@@ -5,5 +5,11 @@
     "about": "I'm a front-end developer from Kyiv, Ukraine 🇺🇦",
     "projects-link": "view my projects",
     "about-link": "more about me"
+  },
+  "menu": {
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact"
   }
 }
