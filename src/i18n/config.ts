@@ -19,7 +19,7 @@ i18n
         translation: ua,
       },
     },
-    debug: true,
+    debug: false,
     keySeparator: ".",
     detection: {
       order: ["queryString", "cookie"],

@@ -1,3 +1,9 @@
 {
-  "default": "Hi!"
+  "home": {
+    "hello": "Hello, I'm",
+    "name": "Yelyzaveta Stoliarchuk",
+    "about": "I'm a front-end developer from Kyiv, Ukraine 🇺🇦",
+    "projects-link": "view my projects",
+    "about-link": "more about me"
+  }
 }
