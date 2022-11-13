@@ -25,9 +25,9 @@ const ThemeButton = () => {
   const getIcon = () => {
     switch (theme) {
       case "light":
-        return <MoonIcon className="w-[20px] fill-grey-dark" />;
+        return <MoonIcon className="w-[30px] fill-grey-dark" />;
       case "dark":
-        return <SunIcon className="w-[20px] fill-grey-light" />;
+        return <SunIcon className="w-[30px] fill-grey-light" />;
       default:
         break;
     }
