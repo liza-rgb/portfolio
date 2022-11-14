@@ -4,12 +4,17 @@
     "name": "Yelyzaveta Stoliarchuk",
     "about": "I'm a front-end developer from Kyiv, Ukraine 🇺🇦",
     "projects-link": "view my projects",
-    "about-link": "more about me"
+    "projects-link-title": "Go to Projects page",
+    "about-link": "more about me",
+    "about-link-title": "Go to About page"
   },
   "menu": {
     "home": "Home",
     "projects": "Projects",
     "about": "About",
     "contact": "Contact"
+  },
+  "contact": {
+    "title": "Let's get in touch!"
   }
 }
