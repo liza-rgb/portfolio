@@ -1,5 +1,7 @@
 import React from "react";
 
+import { HOME_PAGE_ROUTE } from "../../config/routes";
+
 import LangButton from "../LangButton";
 import Sprite, { MoveType } from "../Sprite";
 import ThemeButton from "../ThemeButton";
@@ -17,7 +19,9 @@ const NavBar: React.FC = () => {
     <div className="NavBar fixed py-10 px-20 w-screen z-10 text-xl leading-none animate-appear">
       <div className="flex justify-between">
         <div className="h-[30px] -translate-y-[69px] -translate-x-[28px]">
-          <Sprite move={getSpriteMove()} />
+          <a href={HOME_PAGE_ROUTE}>
+            <Sprite move={getSpriteMove()} />
+          </a>
         </div>
         <div className="flex space-x-6 text-grey-dark dark:text-grey-light">
           <LangButton />
