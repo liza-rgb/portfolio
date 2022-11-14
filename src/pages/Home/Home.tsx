@@ -31,8 +31,13 @@ const Home: React.FC = () => {
           <ArrowLink
             title={t("home.projects-link")}
             link={PROJECTS_PAGE_ROUTE}
+            linkTitle={t("home.projects-link-title")}
           />
-          <ArrowLink title={t("home.about-link")} link={ABOUT_PAGE_ROUTE} />
+          <ArrowLink
+            title={t("home.about-link")}
+            link={ABOUT_PAGE_ROUTE}
+            linkTitle={t("home.about-link-title")}
+          />
         </div>
       </div>
     </div>
