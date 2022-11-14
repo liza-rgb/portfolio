@@ -16,5 +16,29 @@
   },
   "contact": {
     "title": "Let's get in touch!"
+  },
+  "about": {
+    "title": "Hi, I am Yelyzaveta Stoliarchuk",
+    "job": "Frontend Developer, based in Ukraine 🇺🇦",
+    "content": "I am passionate web developer, currently studying Computer Science at Institute for Applied System Analysis Igor Sikorsky Kyiv Polytechnic Institute. In my spare time I enjoy reading sci-fi, drawing and launching new startups.",
+    "certificates": "Featuring certificates achieved on learning platforms",
+    "projects-link": "view my projects",
+    "projects-link-title": "Go to Projects page",
+    "view-certificate": "View certificate",
+    "view-resume": "View my resume"
+  },
+  "months": {
+    "1": "January",
+    "2": "February",
+    "3": "March",
+    "4": "April",
+    "5": "May",
+    "6": "June",
+    "7": "July",
+    "8": "August",
+    "9": "September",
+    "10": "October",
+    "11": "November",
+    "12": "December"
   }
 }

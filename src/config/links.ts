@@ -6,3 +6,5 @@ export const FACEBOOK_LINK = "https://facebook.com/liza.stoliarchuk";
 export const INSTAGRAM_LINK = "https://www.instagram.com/liza_stoliarchuk";
 
 export const GITHUB_REPO_LINK = "https://github.com/liza-rgb";
+
+export const RESUME_LINK = "";
