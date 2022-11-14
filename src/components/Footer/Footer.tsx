@@ -12,12 +12,13 @@ import { ReactComponent as LinkedinIcon } from "../../icons/linkedin.svg";
 import { ReactComponent as FacebookIcon } from "../../icons/facebook.svg";
 
 const Footer: React.FC = () => {
-  const iconStyles = "w-[30px] h-[30px] p-1 fill-grey-light";
+  const iconStyles =
+    "w-[30px] h-[30px] p-1 fill-grey-light dark:fill-blue-dark";
   const linkStyles =
-    "w-[30px] h-[30px] rounded-full bg-blue-bright hover:bg-grey-dark transition-colors duration-300";
+    "w-[30px] h-[30px] rounded-full bg-blue-bright dark:bg-blue-light hover:bg-grey-dark dark:hover:bg-grey-light";
 
   return (
-    <div className="Footer py-5 w-screen">
+    <div className="Footer py-6 w-screen animate-appear">
       <div className="flex justify-center space-x-10">
         <a href={GITHUB_LINK} className={linkStyles}>
           <GithubIcon className={iconStyles} />
@@ -29,12 +30,12 @@ const Footer: React.FC = () => {
           <FacebookIcon className={iconStyles} />
         </a>
       </div>
-      <div className="pt-3 text-center text-xs">
+      <div className="pt-3 text-center text-xs text-grey-dark dark:text-grey-light">
         This website was coded by Yelyzaveta Stoliarchuk, and is{" "}
         <a
           href={GITHUB_REPO_LINK}
           title="GitHub Repository"
-          className="text-blue-bright hover:text-grey-dark"
+          className="text-blue-bright dark:text-blue-light hover:underline"
         >
           open-sourced
         </a>
