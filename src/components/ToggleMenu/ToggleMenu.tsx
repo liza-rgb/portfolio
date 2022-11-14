@@ -51,7 +51,7 @@ const ToggleMenu = () => {
           getVisibility()
         }
       >
-        <div className="space-y-4 text-center px-16 py-20 animate-appear">
+        <div className="space-y-4 text-center px-16 py-20 animate-appearTop">
           <MenuLink title={t("menu.home")} link={HOME_PAGE_ROUTE} />
           <MenuLink title={t("menu.projects")} link={PROJECTS_PAGE_ROUTE} />
           <MenuLink title={t("menu.about")} link={ABOUT_PAGE_ROUTE} />

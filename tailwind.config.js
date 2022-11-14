@@ -46,6 +46,10 @@ module.exports = {
           "66%": { transform: "translateY(-5%)" },
           "100%": { transform: "translateX(0)" },
         },
+        appearTop: {
+          "0%": { transform: "translateY(-10%)" },
+          "100%": { transform: "translateY(0)" },
+        },
       },
       animation: {
         "moveSprite-4": "moveSprite 1s steps(4) infinite",
@@ -54,6 +58,7 @@ module.exports = {
         "moveSprite-8": "moveSprite 1s steps(8) infinite",
         arrowPointer: "arrowPointer 1s linear infinite;",
         appear: "appear 1.5s 1",
+        appearTop: "appearTop 1s 1",
       },
     },
   },
