@@ -61,7 +61,7 @@ const Contact: React.FC = () => {
           />
         </div>
       </div>
-      <div className="absolute bottom-0">
+      <div className="absolute bottom-0 w-screen">
         <Footer />
       </div>
     </div>
