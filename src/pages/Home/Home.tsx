@@ -22,11 +22,11 @@ const Home: React.FC = () => {
       </div>
 
       <div className="absolute top-[40%] text-center text-grey-dark dark:text-grey-light">
-        <div className="w-screen font-press-start text-xl animate-appear">
+        <h1 className="w-screen font-press-start text-xl animate-appear">
           <span>{t("home.hello").toUpperCase()}</span>
           <span className="max-lg: block">{t("home.name").toUpperCase()}</span>
-        </div>
-        <div className="text-sm pt-3 animate-appear">{t("home.about")}</div>
+        </h1>
+        <h2 className="text-sm pt-3 animate-appear">{t("home.about")}</h2>
         <div className="flex justify-center pt-5 space-x-8 text-sm animate-appear">
           <ArrowLink
             title={t("home.projects-link")}
