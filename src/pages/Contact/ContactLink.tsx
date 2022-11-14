@@ -19,7 +19,9 @@ const ContactLink: React.FC<ContactLinkProps> = ({
 }) => {
   return (
     <div className="animate-appear">
-      <h3 className="font-bold text-lg text-grey-dark pb-1">{title}</h3>
+      <h3 className="font-bold text-lg text-grey-dark dark:text-grey-light pb-1">
+        {title}
+      </h3>
       <ArrowLink
         title={content}
         link={link}
