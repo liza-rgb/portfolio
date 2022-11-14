@@ -15,6 +15,9 @@
   span {
     @apply selection:bg-yellow selection:bg-opacity-70;
   }
+  h1 {
+    @apply font-press-start text-xl;
+  }
 }
 
 @layer utilities {
