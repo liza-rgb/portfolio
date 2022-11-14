@@ -23,13 +23,15 @@ const About: React.FC = () => {
             {t("about.job")}
           </h2>
           <p className="py-5 text-sm animate-appear">{t("about.content")}</p>
-          <ArrowLink
-            title={t("about.projects-link")}
-            link={PROJECTS_PAGE_ROUTE}
-            linkTitle={t("about.projects-link-title")}
-          />
+          <div className="animate-appear">
+            <ArrowLink
+              title={t("about.projects-link")}
+              link={PROJECTS_PAGE_ROUTE}
+              linkTitle={t("about.projects-link-title")}
+            />
+          </div>
 
-          <div className="mt-5">
+          <div className="mt-5 animate-appear">
             <SkillTag name="HTML/CSS/JavaScript" />
             <SkillTag name="React.js" />
             <SkillTag name="Redux" />
@@ -51,7 +53,7 @@ const About: React.FC = () => {
             <SkillTag name="Python" />
           </div>
 
-          <div className="mt-5">
+          <div className="mt-5 animate-appear">
             <a
               href={RESUME_LINK}
               className="font-bold border-2 border-grey-dark dark:border-grey-light px-3 py-1 rounded-lg"
