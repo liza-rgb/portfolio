@@ -56,7 +56,7 @@ const About: React.FC = () => {
           <div className="mt-5 animate-appear">
             <a
               href={RESUME_LINK}
-              className="font-bold border-2 border-grey-dark dark:border-grey-light px-3 py-1 rounded-lg"
+              className="font-bold border-2 border-grey-dark hover:bg-grey-dark dark:border-grey-light dark:hover:bg-grey-light px-3 py-1 rounded-lg text-grey-dark hover:text-grey-light dark:text-grey-light dark:hover:text-blue-dark transition-colors duration-300"
             >
               {t("about.view-resume")}
             </a>
@@ -81,7 +81,7 @@ const About: React.FC = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-y-12">
+      <div className="grid grid-cols-2 gap-y-12 mb-10">
         <CertificateCard
           image={require("../../assets/certificates/udemy-bootcamp.jpg")}
           title="Udemy: The Web Developer Bootcamp 2022"
