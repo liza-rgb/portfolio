@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { useTranslation } from "react-i18next";
 
@@ -14,6 +14,11 @@ import SkillTag from "../../components/SkillTag";
 
 const About: React.FC = () => {
   const { t } = useTranslation();
+
+  useEffect(() => {
+    document.title = t("pages.about");
+  }, []);
+
   return (
     <div className="About text-grey-dark dark:text-grey-light pt-[110px] px-16">
       <div className="grid grid-cols-2">

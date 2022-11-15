@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { useTranslation } from "react-i18next";
 
@@ -8,6 +8,10 @@ import { ABOUT_PAGE_ROUTE, PROJECTS_PAGE_ROUTE } from "../../config/routes";
 
 const Home: React.FC = () => {
   const { t } = useTranslation();
+
+  useEffect(() => {
+    document.title = t("pages.home");
+  }, []);
 
   return (
     <div>

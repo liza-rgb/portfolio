@@ -44,5 +44,11 @@
   "footer": {
     "main": "This website was coded by Yelyzaveta Stoliarchuk, and is ",
     "open-sourced": "open-sourced"
+  },
+  "pages": {
+    "home": "Yelyzaveta Stoliarchuk",
+    "projects": "Projects of Yelyzaveta Stoliarchuk",
+    "about": "About Yelyzaveta Stoliarchuk",
+    "contact": "Contact Yelyzaveta Stoliarchuk"
   }
 }

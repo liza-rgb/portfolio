@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { useTranslation } from "react-i18next";
 
@@ -16,6 +16,10 @@ import Footer from "../../components/Footer";
 
 const Contact: React.FC = () => {
   const { t } = useTranslation();
+
+  useEffect(() => {
+    document.title = t("pages.contact");
+  }, []);
 
   return (
     <div className="Contact">
