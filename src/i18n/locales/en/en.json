@@ -50,5 +50,14 @@
     "projects": "Projects of Yelyzaveta Stoliarchuk",
     "about": "About Yelyzaveta Stoliarchuk",
     "contact": "Contact Yelyzaveta Stoliarchuk"
+  },
+  "projects": {
+    "title": "Take a look at what I've been working on!",
+    "launch-link": "Launch Project",
+    "source-code-link": "Source Code",
+    "weather-app": "The weather app is developed using HTML, CSS and Vanilla JS + API, AJAX. It features upper panel with Ukrainian cities and weather forecast for next 5 days on the bottom. User can switch the units of temperature between Celsius and Fahrenheit. There is a light and dark mode.",
+    "yelp-camp-app": "YelpCamp is a full-stack, fully functional web application where people can submit campgrounds and users can review them. It was developed using Atlas MongoDB, combined with integration of cookies and sessions to improve user experience.",
+    "notes-app-1": "Notes App is written in Vanilla JS. The app functionality provides user with ability of creating, deleting, editing, archiving and unarchiving notes. At the bottom of the page user can view the summary table, which shows counts of created notes.",
+    "notes-app-2": "The new version is written using React framework with combination of Redux state management and Typescript. On additional branches you can view integration of Storybook and Tailwind. The API created with Node.js can be viewed here. On additional branches you can view implementation with Postgres, Sequelize ORM, Nest.js and Docker."
   }
 }

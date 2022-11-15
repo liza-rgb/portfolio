@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import { useTranslation } from "react-i18next";
+
 import { ReactComponent as PlusIcon } from "../../icons/plus.svg";
 import { ReactComponent as MinusIcon } from "../../icons/minus.svg";
 import { ReactComponent as GitHubIcon } from "../../icons/github.svg";
@@ -10,6 +12,8 @@ interface AccordionProps {
 }
 
 const Accordion: React.FC<AccordionProps> = ({ data }) => {
+  const { t } = useTranslation();
+
   const [opened, setOpened] = useState(-1);
   const recentProjects = data.slice().reverse();
 
@@ -30,6 +34,27 @@ const Accordion: React.FC<AccordionProps> = ({ data }) => {
       return require("../../assets/noise.png");
     }
     return recentProjects[opened].image;
+  };
+
+  const getProjectLaunchLink = (link: string) => {
+    if (link.trim().length) {
+      return (
+        <a href={link} className={linkStyles} target="_blank" rel="noreferrer">
+          {t("projects.launch-link")}
+        </a>
+      );
+    }
+  };
+
+  const getSourceCodeLink = (link: string) => {
+    if (link.trim().length) {
+      return (
+        <a href={link} className={linkStyles} target="_blank" rel="noreferrer">
+          <GitHubIcon className="w-[22px] h-[22px] mr-2" />
+          {t("projects.source-code-link")}
+        </a>
+      );
+    }
   };
 
   const iconStyles = "w-[20px] h-[20px] fill-grey-light dark:fill-blue-dark";
@@ -73,26 +98,11 @@ const Accordion: React.FC<AccordionProps> = ({ data }) => {
                     getVisibility(index)
                   }
                 >
-                  <div>{project.description}</div>
+                  <div>{t(project.description)}</div>
 
                   <div className="flex space-x-4 pt-4">
-                    <a
-                      href={project.projectLink}
-                      className={linkStyles}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Launch project
-                    </a>
-                    <a
-                      href={project.githubLink}
-                      className={linkStyles}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <GitHubIcon className="w-[22px] h-[22px] mr-2" />
-                      Source Code
-                    </a>
+                    {getProjectLaunchLink(project.projectLink)}
+                    {getSourceCodeLink(project.githubLink)}
                   </div>
                 </div>
               </div>

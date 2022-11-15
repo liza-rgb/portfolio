@@ -17,7 +17,7 @@ const Projects: React.FC = () => {
   return (
     <div className="Projects pt-[110px] px-16">
       <PageTitle
-        title="Take a look at what I've been working on!"
+        title={t("projects.title")}
         className="text-grey-dark dark:text-grey-light animate-appear"
       />
       <Accordion data={projectData} />
