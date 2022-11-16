@@ -60,6 +60,12 @@ module.exports = {
         appear: "appear 1.5s 1",
         appearTop: "appearTop 1s 1",
       },
+      screens: {
+        sm: "800px",
+        md: "1000px",
+        lg: "1200px",
+        xl: "1400px",
+      },
     },
   },
   plugins: [],
