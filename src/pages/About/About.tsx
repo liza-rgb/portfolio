@@ -8,7 +8,6 @@ import { RESUME_LINK } from "../../config/links";
 import ArrowLink from "../../components/ArrowLink";
 import PageTitle from "../../components/PageTitle";
 import { ReactComponent as ArrowIcon } from "../../icons/arrow-right.svg";
-import Footer from "../../components/Footer";
 import CertificateCard from "../../components/CertificateCard";
 import SkillTag from "../../components/SkillTag";
 
@@ -20,10 +19,10 @@ const About: React.FC = () => {
   }, []);
 
   return (
-    <div className="About text-grey-dark dark:text-grey-light pt-[110px] px-16">
-      <div className="grid grid-cols-2">
+    <div className="About text-grey-dark dark:text-grey-light">
+      <div className="grid md:grid-cols-2">
         <div>
-          <PageTitle title={t("about.title")} className="animate-appear" />
+          <PageTitle title={t("about.title")} />
           <h2 className="text-md font-bold py-3 animate-appear text-blue-bright dark:text-blue-light">
             {t("about.job")}
           </h2>
@@ -61,23 +60,23 @@ const About: React.FC = () => {
           <div className="mt-5 animate-appear">
             <a
               href={RESUME_LINK}
-              className="font-bold border-2 border-grey-dark hover:bg-grey-dark dark:border-grey-light dark:hover:bg-grey-light px-3 py-1 rounded-lg text-grey-dark hover:text-grey-light dark:text-grey-light dark:hover:text-blue-dark transition-colors duration-300"
+              className="font-bold border-2 border-grey-dark hover:bg-grey-dark dark:border-grey-light dark:hover:bg-grey-light px-3 py-1 rounded-lg text-grey-dark hover:text-grey-light dark:text-grey-light dark:hover:text-blue-dark transition-colors duration-300 block text-center animate-appear"
             >
               {t("about.view-resume")}
             </a>
           </div>
         </div>
 
-        <div className="px-24">
+        <div className="lg:px-12 xl:px-24 md:px-0 sm:px-20 max-md:my-8">
           <img
             src={require("../../assets/me.jpg")}
             alt="Yelyzaveta Stoliarchuk"
-            className="rounded-full animate-appear"
+            className="rounded-full animate-appear max-md:max-h-[600px] mx-auto"
           />
         </div>
       </div>
 
-      <div className="py-10">
+      <div className="xl:py-10 lg:py-8">
         <p className="text-center font-bold pb-3 animate-appear">
           {t("about.certificates")}
         </p>
@@ -86,7 +85,7 @@ const About: React.FC = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-y-12 mb-10">
+      <div className="grid md:grid-cols-2 gap-y-12 mb-10">
         <CertificateCard
           image={require("../../assets/certificates/udemy-bootcamp.jpg")}
           title="Udemy: The Web Developer Bootcamp 2022"
@@ -130,8 +129,6 @@ const About: React.FC = () => {
           link="https://coursera.org/share/6c44e177db5ed5794180c3ec0097725a"
         />
       </div>
-
-      <Footer />
     </div>
   );
 };
