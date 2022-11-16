@@ -63,8 +63,8 @@ const Accordion: React.FC<AccordionProps> = ({ data }) => {
 
   return (
     <div className="Accordion">
-      <div className="grid grid-cols-2">
-        <div className="space-y-4">
+      <div className="grid md:grid-cols-2">
+        <div className="space-y-4 max-md:order-1">
           {recentProjects.map((project, index) => {
             return (
               <div>
@@ -113,12 +113,12 @@ const Accordion: React.FC<AccordionProps> = ({ data }) => {
           <img
             src={getImage()}
             alt=""
-            className="h-[400px] w-[470px] object-cover px-[45px] py-[30px]"
+            className="md:h-[330px] lg:h-[400px] xl:w-[470px] lg:w-[400px] w-screen max-h-[500px] object-cover md:px-[30px] lg:px-[30px] xl:px-[45px] py-[30px]"
           />
           <img
             src={require("../../assets/tv.png")}
             alt=""
-            className="h-[400px] w-[600px] -mt-[400px]"
+            className="md:h-[300px] lg:h-[370px] xl:h-[400px] w-[600px] lg:-mt-[400px] md:-mt-[330px] max-md:hidden"
           />
         </div>
       </div>
