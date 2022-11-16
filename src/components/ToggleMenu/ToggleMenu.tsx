@@ -12,7 +12,6 @@ import {
   HOME_PAGE_ROUTE,
   PROJECTS_PAGE_ROUTE,
 } from "../../config/routes";
-import ArrowLink from "../ArrowLink";
 
 const ToggleMenu = () => {
   const { t } = useTranslation();
