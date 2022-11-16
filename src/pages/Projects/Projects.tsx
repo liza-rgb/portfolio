@@ -20,7 +20,9 @@ const Projects: React.FC = () => {
         title={t("projects.title")}
         className="text-grey-dark dark:text-grey-light animate-appear"
       />
-      <Accordion data={projectData} />
+      <div className="mt-10">
+        <Accordion data={projectData} />
+      </div>
       <div className="mt-6">
         <Footer />
       </div>

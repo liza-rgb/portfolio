@@ -57,13 +57,13 @@ const Accordion: React.FC<AccordionProps> = ({ data }) => {
     }
   };
 
-  const iconStyles = "w-[20px] h-[20px] fill-grey-light dark:fill-blue-dark";
+  const iconStyles = "w-[15px] h-[15px] fill-grey-light dark:fill-blue-dark";
   const linkStyles =
     "flex px-2 py-1 mt-4 dark:bg-blue-light dark:hover:bg-blue-dark bg-blue-bright hover:bg-grey-light dark:text-blue-dark dark:hover:text-blue-light text-grey-light hover:text-blue-bright border-2 border-blue-bright dark:border-blue-light rounded-lg font-bold transition-colors duration-300 fill-grey-light dark:fill-blue-dark hover:fill-blue-bright dark:hover:fill-blue-light";
 
   return (
     <div className="Accordion">
-      <div className="grid grid-cols-2 mt-10">
+      <div className="grid grid-cols-2">
         <div className="space-y-4">
           {recentProjects.map((project, index) => {
             return (
@@ -87,7 +87,7 @@ const Accordion: React.FC<AccordionProps> = ({ data }) => {
                       <MinusIcon className={iconStyles} />
                     </div>
                   </button>
-                  <div className="dark:bg-grey-light bg-grey-dark dark:text-blue-dark text-grey-light px-4 text-sm py-3 w-full font-bold">
+                  <div className="dark:bg-grey-light bg-grey-dark dark:text-blue-dark text-grey-light px-4 text-sm py-2 w-full font-bold">
                     {project.title}
                   </div>
                 </div>
