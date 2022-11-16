@@ -40,6 +40,30 @@ const projectData: ProjectDataProps[] = [
     githubLink: "https://github.com/liza-rgb/radency-task-2/",
     projectLink: "https://lustrous-cupcake-d32a39.netlify.app/",
   },
+  {
+    id: "5",
+    image: require("../../assets/projects/news-portal.png"),
+    title: "News Portal",
+    description: "projects.news-portal",
+    githubLink: "https://github.com/liza-rgb/news-portal/",
+    projectLink: "",
+  },
+  {
+    id: "6",
+    image: require("../../assets/projects/behealthy.png"),
+    title: "Behealthy (Internship Radency)",
+    description: "projects.behealthy",
+    githubLink: "",
+    projectLink: "",
+  },
+  {
+    id: "7",
+    image: require("../../assets/projects/behealthy-mobile.png"),
+    title: "Behealthy Mobile (Internship Radency)",
+    description: "projects.behealthy-mobile",
+    githubLink: "",
+    projectLink: "",
+  },
 ];
 
 export default projectData;
