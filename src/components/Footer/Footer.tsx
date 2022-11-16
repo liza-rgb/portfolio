@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
     "w-[30px] h-[30px] rounded-full bg-blue-bright dark:bg-blue-light hover:bg-grey-dark dark:hover:bg-grey-light";
 
   return (
-    <div className="Footer py-6 animate-appear">
+    <div className="Footer py-8 animate-appear">
       <div className="flex justify-center space-x-10">
         <a href={GITHUB_LINK} className={linkStyles}>
           <GithubIcon className={iconStyles} />
