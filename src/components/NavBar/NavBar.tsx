@@ -16,7 +16,7 @@ const NavBar: React.FC = () => {
   };
 
   return (
-    <div className="NavBar fixed py-10 px-20 w-screen z-10 text-xl leading-none animate-appear">
+    <div className="NavBar fixed py-10 xl:px-16 lg:px-10 px-6 w-screen z-10 text-xl leading-none animate-appear">
       <div className="flex justify-between">
         <div className="h-[30px] -translate-y-[69px] -translate-x-[28px]">
           <a href={HOME_PAGE_ROUTE}>
