@@ -17,12 +17,12 @@ const Home: React.FC = () => {
     <div>
       <div className="h-screen relative overflow-hidden">
         <div className="bg-grey-dark bg-opacity-80 w-[600px] h-[600px] rounded-full absolute -bottom-[300px] -left-[300px] animate-appear"></div>
-        <div className="bg-blue-bright dark:bg-blue-light bg-opacity-80 w-[300px] h-[300px] rounded-full absolute -bottom-[150px] left-[200px] animate-appear"></div>
-        <div className="bg-grey-dark bg-opacity-80 w-[200px] h-[200px] rounded-full absolute -bottom-[100px] left-[400px] animate-appear"></div>
+        <div className="bg-blue-bright dark:bg-blue-light bg-opacity-80 w-[300px] h-[300px] rounded-full absolute -bottom-[150px] lg:left-[200px] left-[100px] animate-appear max-sm:hidden"></div>
+        <div className="bg-grey-dark bg-opacity-80 w-[200px] h-[200px] rounded-full absolute -bottom-[100px] lg:left-[400px] left-[280px] animate-appear max-md:hidden"></div>
 
         <div className="bg-blue-bright dark:bg-blue-light bg-opacity-80 w-[600px] h-[600px] rounded-full absolute -bottom-[300px] -right-[300px] animate-appear"></div>
-        <div className="bg-grey-dark bg-opacity-80 w-[300px] h-[300px] rounded-full absolute -bottom-[150px] right-[200px] animate-appear"></div>
-        <div className="bg-blue-bright dark:bg-blue-light bg-opacity-80 w-[200px] h-[200px] rounded-full absolute -bottom-[100px] right-[400px] animate-appear"></div>
+        <div className="bg-grey-dark bg-opacity-80 w-[300px] h-[300px] rounded-full absolute -bottom-[150px] lg:right-[200px] right-[100px] animate-appear max-sm:hidden"></div>
+        <div className="bg-blue-bright dark:bg-blue-light bg-opacity-80 w-[200px] h-[200px] rounded-full absolute -bottom-[100px] lg:right-[400px] right-[280px] animate-appear max-md:hidden"></div>
       </div>
 
       <div className="absolute top-[40%] text-center text-grey-dark dark:text-grey-light">
