@@ -30,7 +30,7 @@ const CertificateCard: React.FC<CertificateCardProps> = ({
       <img
         src={image}
         alt={title}
-        className="h-[380px] rounded-[50px] mx-auto object-cover"
+        className="sm:h-[400px] md:h-[320px] lg:h-[360px] xl:h-[380px] rounded-[50px] mx-auto object-cover"
       />
       <a
         href={link}
