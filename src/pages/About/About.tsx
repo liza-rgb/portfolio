@@ -49,6 +49,8 @@ const About: React.FC = () => {
             <a
               href={RESUME_LINK}
               className="font-bold border-2 border-grey-dark hover:bg-grey-dark dark:border-grey-light dark:hover:bg-grey-light px-3 py-1 rounded-lg text-grey-dark hover:text-grey-light dark:text-grey-light dark:hover:text-blue-dark transition-colors duration-300 block text-center animate-appear"
+              target="_blank"
+              rel="noreferrer"
             >
               {t("about.view-resume")}
             </a>
