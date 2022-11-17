@@ -3,7 +3,11 @@ import React, { useEffect, useState } from "react";
 import { ReactComponent as SunIcon } from "../../icons/sun.svg";
 import { ReactComponent as MoonIcon } from "../../icons/moon.svg";
 
-const ThemeButton = () => {
+interface ThemeButtonProps {
+  getTheme?: any;
+}
+
+const ThemeButton: React.FC<ThemeButtonProps> = ({ getTheme }) => {
   const [theme, setTheme] = useState(localStorage.theme || "light");
 
   const toggleTheme = () => {
@@ -11,10 +15,12 @@ const ThemeButton = () => {
       case "light":
         localStorage.theme = "dark";
         setTheme("dark");
+        getTheme("dark");
         break;
       case "dark":
         localStorage.theme = "light";
         setTheme("light");
+        getTheme("light");
         break;
       default:
         break;

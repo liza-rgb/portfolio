@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { HOME_PAGE_ROUTE } from "../../config/routes";
 
@@ -8,8 +8,10 @@ import ThemeButton from "../ThemeButton";
 import ToggleMenu from "../ToggleMenu";
 
 const NavBar: React.FC = () => {
+  const [theme, setTheme] = useState(localStorage.theme || "light");
+
   const getSpriteMove = () => {
-    if (localStorage.theme === "dark") {
+    if (theme === "dark") {
       return MoveType.SLEEP;
     }
     return MoveType.WASH;
@@ -25,7 +27,7 @@ const NavBar: React.FC = () => {
         </div>
         <div className="flex space-x-6 text-grey-dark dark:text-grey-light">
           <LangButton />
-          <ThemeButton />
+          <ThemeButton getTheme={setTheme} />
           <ToggleMenu />
         </div>
       </div>
