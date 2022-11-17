@@ -10,12 +10,10 @@ const LangButton = () => {
       case "UA":
         localStorage.lang = "UA";
         setLang("UA");
-        console.log(localStorage.lang, lang);
         break;
       case "EN":
         localStorage.lang = "EN";
         setLang("EN");
-        console.log(localStorage.lang, lang);
         break;
       default:
         break;
@@ -23,13 +21,13 @@ const LangButton = () => {
   };
 
   const changeLanguage = (event: any) => {
-    console.log(localStorage.lang, lang);
     const translateTo = event.target.innerHTML;
     i18n.changeLanguage(translateTo.toLowerCase());
     toggleLang(translateTo);
   };
 
   useEffect(() => {
+    console.log(localStorage.lang);
     if (localStorage.lang) {
       i18n.changeLanguage(localStorage.lang.toLowerCase());
     }
