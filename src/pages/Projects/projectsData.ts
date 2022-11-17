@@ -46,7 +46,7 @@ const projectData: ProjectDataProps[] = [
     title: "News Portal",
     description: "projects.news-portal",
     githubLink: "https://github.com/liza-rgb/news-portal/",
-    projectLink: "",
+    projectLink: "https://fascinating-swan-3aff30.netlify.app",
   },
   {
     id: "6",
