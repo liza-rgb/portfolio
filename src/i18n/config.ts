@@ -5,12 +5,19 @@ import { initReactI18next } from "react-i18next";
 import en from "./locales/en/en.json";
 import ua from "./locales/ua/ua.json";
 
+const getLang = () => {
+  if (localStorage.lang.length > 0) {
+    return localStorage.lang;
+  }
+  return "en";
+};
+
 i18n
   .use(Backend)
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    fallbackLng: localStorage.lang || "en",
+    fallbackLng: getLang(),
     resources: {
       en: {
         translation: en,
