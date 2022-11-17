@@ -7,7 +7,7 @@ export interface ProjectDataProps {
   projectLink: string;
 }
 
-const projectData: ProjectDataProps[] = [
+const projectsData: ProjectDataProps[] = [
   {
     id: "1",
     image: require("../../assets/projects/weather.png"),
@@ -66,4 +66,4 @@ const projectData: ProjectDataProps[] = [
   },
 ];
 
-export default projectData;
+export default projectsData;

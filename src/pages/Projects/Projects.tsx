@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import Accordion from "../../components/Accordion";
 import PageTitle from "../../components/PageTitle";
 
-import projectData from "./projectsData";
+import projectsData from "./projectsData";
 
 const Projects: React.FC = () => {
   const { t } = useTranslation();
@@ -17,7 +17,7 @@ const Projects: React.FC = () => {
     <div className="Projects">
       <PageTitle title={t("projects.title")} />
       <div className="mt-10">
-        <Accordion data={projectData} />
+        <Accordion data={projectsData} />
       </div>
     </div>
   );
