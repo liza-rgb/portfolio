@@ -11,7 +11,7 @@ const Home: React.FC = () => {
 
   useEffect(() => {
     document.title = t("pages.home");
-  }, []);
+  }, [t]);
 
   return (
     <div>

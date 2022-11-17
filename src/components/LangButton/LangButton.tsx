@@ -32,7 +32,7 @@ const LangButton = () => {
 
   useEffect(() => {
     i18n.changeLanguage(localStorage.lang.toLowerCase());
-  }, []);
+  }, [i18n]);
 
   return (
     <button type="button" onClick={changeLanguage}>

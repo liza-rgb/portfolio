@@ -18,7 +18,7 @@ const Contact: React.FC = () => {
 
   useEffect(() => {
     document.title = t("pages.contact");
-  }, []);
+  }, [t]);
 
   return (
     <div className="Contact">

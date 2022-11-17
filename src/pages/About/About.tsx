@@ -16,7 +16,7 @@ const About: React.FC = () => {
 
   useEffect(() => {
     document.title = t("pages.about");
-  }, []);
+  }, [t]);
 
   return (
     <div className="About text-grey-dark dark:text-grey-light">

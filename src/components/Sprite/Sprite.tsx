@@ -13,11 +13,6 @@ export enum MoveType {
   DANCE = "dance",
 }
 
-interface MoveProps {
-  type: MoveType;
-  steps: number;
-}
-
 interface SpriteProps {
   move: MoveType;
 }

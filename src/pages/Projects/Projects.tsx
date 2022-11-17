@@ -11,7 +11,7 @@ const Projects: React.FC = () => {
 
   useEffect(() => {
     document.title = t("pages.projects");
-  }, []);
+  }, [t]);
 
   return (
     <div className="Projects">
