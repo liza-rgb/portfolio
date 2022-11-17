@@ -12,7 +12,6 @@ import CertificateCard from "../../components/CertificateCard";
 import SkillTag from "../../components/SkillTag";
 
 import certificatesData from "./certificatesData";
-import { CertificateDataProps } from "./certificatesData";
 import skillsData from "./skillsData";
 
 const About: React.FC = () => {
