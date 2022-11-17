@@ -67,7 +67,7 @@ const Accordion: React.FC<AccordionProps> = ({ data }) => {
         <div className="space-y-4 max-md:order-1">
           {recentProjects.map((project, index) => {
             return (
-              <div>
+              <div key={index}>
                 <div className="flex">
                   <button
                     type="button"
