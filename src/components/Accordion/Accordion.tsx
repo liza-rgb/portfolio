@@ -94,16 +94,23 @@ const Accordion: React.FC<AccordionProps> = ({ data }) => {
 
                 <div
                   className={
-                    "ml-7 px-4 border-2 dark:border-grey-light border-grey-dark dark:text-grey-light text-grey-dark py-2 text-sm " +
+                    "ml-7 border-2 dark:border-grey-light border-grey-dark dark:text-grey-light text-grey-dark py-2 text-sm " +
                     getVisibility(index)
                   }
                 >
-                  <div>{t(project.description)}</div>
-
-                  <div className="flex space-x-4">
-                    {getProjectLaunchLink(project.projectLink)}
-                    {getSourceCodeLink(project.githubLink)}
+                  <div className="px-4">
+                    <div>{t(project.description)}</div>
+                    <div className="flex space-x-4">
+                      {getProjectLaunchLink(project.projectLink)}
+                      {getSourceCodeLink(project.githubLink)}
+                    </div>
                   </div>
+
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="mx-auto pt-5 w-full object-cover md:hidden"
+                  />
                 </div>
               </div>
             );
@@ -113,12 +120,12 @@ const Accordion: React.FC<AccordionProps> = ({ data }) => {
           <img
             src={getImage()}
             alt=""
-            className="md:h-[330px] lg:h-[400px] xl:w-[470px] lg:w-[400px] w-screen max-h-[500px] object-cover md:px-[30px] lg:px-[30px] xl:px-[45px] py-[30px]"
+            className="md:h-[330px] lg:h-[400px] xl:w-[470px] lg:w-[400px] w-screen max-h-[500px] object-cover xl:px-[45px] lg:px-[30px] pr-[90px] pl-[20px] py-[30px] max-md:hidden"
           />
           <img
             src={require("../../assets/tv.png")}
             alt=""
-            className="md:h-[300px] lg:h-[370px] xl:h-[400px] w-[600px] lg:-mt-[400px] md:-mt-[330px] max-md:hidden"
+            className="md:h-[300px] lg:h-[370px] xl:h-[400px] w-[600px] lg:-mt-[400px] md:-mt-[324px] max-md:hidden"
           />
         </div>
       </div>
