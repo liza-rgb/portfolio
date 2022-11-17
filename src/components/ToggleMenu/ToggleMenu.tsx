@@ -40,24 +40,24 @@ const ToggleMenu = () => {
   };
 
   return (
-    <>
+    <div>
       <button type="button" onClick={toggleMenu}>
         {getIcon()}
       </button>
       <div
         className={
-          "bg-grey-light dark:bg-blue-dark h-screen w-screen top-[110px] right-0 absolute z-10 " +
+          "bg-grey-light dark:bg-blue-dark h-screen w-screen top-[110px] right-0 absolute z-10 animate-appearTop " +
           getVisibility()
         }
       >
-        <div className="space-y-4 text-center px-16 py-20 animate-appearTop">
+        <div className="space-y-4 text-center absolute top-[40%] left-[50%] -translate-x-[50%] -translate-y-[50%]">
           <MenuLink title={t("menu.home")} link={HOME_PAGE_ROUTE} />
           <MenuLink title={t("menu.projects")} link={PROJECTS_PAGE_ROUTE} />
           <MenuLink title={t("menu.about")} link={ABOUT_PAGE_ROUTE} />
           <MenuLink title={t("menu.contact")} link={CONTACT_PAGE_ROUTE} />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
