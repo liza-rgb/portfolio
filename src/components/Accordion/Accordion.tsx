@@ -74,7 +74,7 @@ const Accordion: React.FC<AccordionProps> = ({ data }) => {
                     onClick={() => setOpened(index)}
                     className={index === opened ? "hidden" : ""}
                   >
-                    <div className="dark:bg-grey-light bg-grey-dark py-2 pl-2 rounded-l-full">
+                    <div className="dark:bg-grey-light bg-grey-dark py-2 pl-2 rounded-l-full border">
                       <PlusIcon className={iconStyles} />
                     </div>
                   </button>
@@ -83,11 +83,11 @@ const Accordion: React.FC<AccordionProps> = ({ data }) => {
                     onClick={() => closeTab(index)}
                     className={getVisibility(index)}
                   >
-                    <div className="dark:bg-grey-light bg-grey-dark py-2 pl-2 rounded-l-full">
+                    <div className="dark:bg-grey-light bg-grey-dark py-2 pl-2 rounded-l-full border">
                       <MinusIcon className={iconStyles} />
                     </div>
                   </button>
-                  <div className="dark:bg-grey-light bg-grey-dark dark:text-blue-dark text-grey-light px-4 text-sm py-2 w-full font-bold">
+                  <div className="dark:bg-grey-light bg-grey-dark dark:text-blue-dark text-grey-light px-4 text-sm py-2 w-full font-bold border">
                     {project.title}
                   </div>
                 </div>
