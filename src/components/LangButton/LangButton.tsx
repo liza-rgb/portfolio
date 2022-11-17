@@ -20,7 +20,6 @@ const LangButton = () => {
       default:
         break;
     }
-    window.location.reload();
   };
 
   const changeLanguage = (event: any) => {

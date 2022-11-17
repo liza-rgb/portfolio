@@ -19,7 +19,6 @@ const ThemeButton = () => {
       default:
         break;
     }
-    window.location.reload();
   };
 
   const getIcon = () => {
