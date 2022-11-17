@@ -6,8 +6,8 @@ import en from "./locales/en/en.json";
 import ua from "./locales/ua/ua.json";
 
 const getLang = () => {
-  if (localStorage.lang.length > 0) {
-    return localStorage.lang;
+  if ("lang" in localStorage) {
+    return localStorage.lang.toLowerCase();
   }
   return "en";
 };
