@@ -94,11 +94,11 @@ const Accordion: React.FC<AccordionProps> = ({ data }) => {
 
                 <div
                   className={
-                    "ml-7 border-2 dark:border-grey-light border-grey-dark dark:text-grey-light text-grey-dark py-2 text-sm " +
+                    "ml-7 border-2 dark:border-grey-light border-grey-dark dark:text-grey-light text-grey-dark text-sm " +
                     getVisibility(index)
                   }
                 >
-                  <div className="px-4">
+                  <div className="px-4 py-2">
                     <div>{t(project.description)}</div>
                     <div className="flex space-x-4">
                       {getProjectLaunchLink(project.projectLink)}
@@ -109,7 +109,7 @@ const Accordion: React.FC<AccordionProps> = ({ data }) => {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="mx-auto pt-5 w-full object-cover md:hidden"
+                    className="mx-auto pt-3 w-full object-cover md:hidden"
                   />
                 </div>
               </div>
