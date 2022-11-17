@@ -35,6 +35,8 @@ const CertificateCard: React.FC<CertificateCardProps> = ({
       <a
         href={link}
         title={t("about.view-certificate")}
+        target="_blank"
+        rel="noreferrer"
         className="text-grey-dark hover:text-blue-bright dark:text-grey-light hover:dark:text-blue-light transition-colors duration-300"
       >
         <h3 className="text-center text-md font-bold px-3 pt-5">{title}</h3>
