@@ -14,12 +14,17 @@ const ArrowLink: React.FC<ArrowLinkProps> = ({
   linkTitle,
   isTargetBlank = false,
 }) => {
+  const getProps = () => {
+    if (isTargetBlank) {
+      return { target: "_blank", rel: "noreferrer" };
+    }
+  };
+
   return (
     <a
       href={link}
       title={linkTitle}
-      target={isTargetBlank ? "_blank" : "_self"}
-      rel={isTargetBlank ? "noreferrer" : ""}
+      {...getProps()}
       className="flex space-x-1 text-blue-bright dark:text-blue-light"
     >
       <ArrowIcon className="fill-blue-bright dark:fill-blue-light animate-arrowPointer w-[24px] h-[24px]" />
