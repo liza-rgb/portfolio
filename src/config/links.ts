@@ -8,4 +8,4 @@ export const INSTAGRAM_LINK = "https://www.instagram.com/liza_stoliarchuk";
 export const GITHUB_REPO_LINK = "https://github.com/liza-rgb";
 
 export const RESUME_LINK =
-  "https://drive.google.com/file/d/1--nfu-Y8XIiuYRITOZs0jFrmvoCNvNDd/view?usp=sharing";
+  "https://drive.google.com/file/d/1D-UD5Ed2KY65sLVLxqn4v0OBgOShOSbJ/view?usp=sharing";
