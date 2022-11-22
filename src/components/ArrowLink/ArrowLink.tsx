@@ -27,8 +27,8 @@ const ArrowLink: React.FC<ArrowLinkProps> = ({
       {...getProps()}
       className="flex space-x-1 text-blue-bright dark:text-blue-light"
     >
-      <ArrowIcon className="fill-blue-bright dark:fill-blue-light animate-arrowPointer w-[24px] h-[24px]" />
-      <span>{title}</span>
+      <ArrowIcon className="fill-blue-bright dark:fill-blue-light animate-arrowPointer w-[18px] xs:w-[24px] h-[18px] xs:h-[24px]" />
+      <span className="text-xs xs:text-sm">{title}</span>
     </a>
   );
 };
