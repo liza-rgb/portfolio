@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
           <FacebookIcon className={iconStyles} />
         </a>
       </div>
-      <div className="pt-3 text-center text-xs text-grey-dark dark:text-grey-light">
+      <div className="pt-3 text-center text-xs text-grey-dark dark:text-grey-light px-1 pb-1">
         {t("footer.main")}
         <a
           href={GITHUB_REPO_LINK}
