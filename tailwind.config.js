@@ -61,6 +61,7 @@ module.exports = {
         appearTop: "appearTop 1s 1",
       },
       screens: {
+        xs: "370px",
         sm: "800px",
         md: "1000px",
         lg: "1200px",
