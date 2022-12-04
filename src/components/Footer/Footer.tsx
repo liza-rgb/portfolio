@@ -38,6 +38,8 @@ const Footer: React.FC = () => {
         {t("footer.main")}
         <a
           href={GITHUB_REPO_LINK}
+          target="_blank"
+          rel="noreferrer"
           title="GitHub Repository"
           className="text-blue-bright dark:text-blue-light hover:underline"
         >
