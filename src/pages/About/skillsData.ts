@@ -1,9 +1,11 @@
 const skillsData: string[] = [
   "HTML/CSS/JavaScript",
+  "SASS/SCCS",
   "React.js",
-  "Redux",
+  "Redux (Toolkit, Saga)",
   "TypeScript",
   "React Native",
+  "Next.js",
   "Storybook",
   "Tailwind CSS",
   "Bootstrap 5.0",
