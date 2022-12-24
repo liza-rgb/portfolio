@@ -65,7 +65,7 @@ const About: React.FC = () => {
         </div>
       </div>
 
-      <div className="xl:py-10 lg:py-8">
+      <div className="xl:py-10 lg:py-8 md:py-8">
         <p className="text-center font-bold pb-3 animate-appear">
           {t("about.certificates")}
         </p>
